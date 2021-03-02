@@ -25,3 +25,5 @@ jobs:
         packagePAT: ${{ secrets.BALLERINA_BOT_TOKEN }}
       run: |
         ./gradlew publish
+    - name: Upload Coverage Report
+      uses: codecov/codecov-action@v1
